@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>990346887057-vqfbdj8bpoh4qglistkiciufl2tj4djg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.990346887057-vqfbdj8bpoh4qglistkiciufl2tj4djg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBENxN30PkFGf60Bl0_nFF8FiQyLjToFWU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>990346887057</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>helloU.COVID-19</string>
+	<key>PROJECT_ID</key>
+	<string>aycorona-899e2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aycorona-899e2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:990346887057:ios:1b573d4dbdf1d5a59fa430</string>
+	<key>DATABASE_URL</key>
+	<string>https://aycorona-899e2.firebaseio.com</string>
+</dict>
+</plist>
