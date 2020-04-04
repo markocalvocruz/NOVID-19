@@ -20,9 +20,10 @@ class ImageViewController: UIViewController {
     var productFound: Bool!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var bannerTitleLabel: UILabel!
     
-    @IBOutlet weak var noThanksLabel: UIButton!
+    
     @IBAction func shareButtonTapped(_ sender: UIButton) {
         shareButtonTapped()
         
@@ -38,21 +39,16 @@ extension ImageViewController {
         setBannerText()
         setImageView()
         setBannerViewBackgroundColor()
-        setNoThanksButtonLabel()
     }
-    
-    private func setNoThanksButtonLabel() {
-        let attributes = stroke(font: UIFont.boldSystemFont(ofSize: 20), strokeWidth: 2, insideColor: .white, strokeColor: .black)
-        let attributedStr = NSMutableAttributedString(string: "No Thanks", attributes: attributes)
-        noThanksLabel.setAttributedTitle(attributedStr, for: .normal)
-    }
+
     private func setImageView() {
         guard let image = self.image else { preconditionFailure("NO image found")}
         imageView.image = image
+        previewImageView.image = image
     }
     private func setBannerViewBackgroundColor() {
         if productFound {
-            bannerView.backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.9725490196, blue: 0, alpha: 1)
+            bannerView.backgroundColor = #colorLiteral(red: 0.1465550065, green: 0.7826710343, blue: 0, alpha: 1)
         } else {
             bannerView.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         }

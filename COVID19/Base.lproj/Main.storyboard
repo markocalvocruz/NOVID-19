@@ -98,89 +98,116 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-zx-I99">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db8-oE-az9" customClass="DesignableButton" customModule="COVID19" customModuleProvider="target">
-                                <rect key="frame" x="107" y="696" width="200" height="65"/>
-                                <color key="backgroundColor" red="0.0039215686274509803" green="0.82352941176470584" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="AOA-5d-FrH"/>
-                                    <constraint firstAttribute="height" constant="65" id="UIQ-5d-pap"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Share">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="shareButtonTapped:" destination="Fnv-qc-hc0" eventType="touchUpInside" id="d8z-nA-E0a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ens-rT-Qar">
-                                <rect key="frame" x="170" y="775" width="74" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="No Thanks">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="cHy-pc-hLH" kind="presentation" modalPresentationStyle="fullScreen" id="9R6-2X-9LP"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nab-TD-AvP" userLabel="Banner" customClass="DesignableView" customModule="COVID19" customModuleProvider="target">
                                 <rect key="frame" x="-2" y="-2" width="418" height="128"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="snipe_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-Is-GbX">
-                                        <rect key="frame" x="8" y="43" width="101" height="73"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="85" id="FdE-Qr-gIL"/>
-                                            <constraint firstAttribute="width" secondItem="8ci-Is-GbX" secondAttribute="height" multiplier="117:85" id="x14-gs-rIA"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Corona Fighter!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAI-Xp-6qi" userLabel="headerLabel" customClass="DesignableLabel" customModule="COVID19" customModuleProvider="target">
-                                        <rect key="frame" x="117" y="61" width="228" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fights the virus!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAI-Xp-6qi" userLabel="headerLabel" customClass="DesignableLabel" customModule="COVID19" customModuleProvider="target">
+                                        <rect key="frame" x="91.5" y="65" width="235" height="36"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11372549019607843" green="0.97254901960784312" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.75686274509999996" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="8ci-Is-GbX" firstAttribute="width" secondItem="8ci-Is-GbX" secondAttribute="height" multiplier="117:85" id="CJZ-a3-nzW"/>
                                     <constraint firstItem="vAI-Xp-6qi" firstAttribute="centerX" secondItem="nab-TD-AvP" secondAttribute="centerX" id="Mub-0H-dCZ"/>
                                     <constraint firstAttribute="height" constant="128" id="TDq-TY-5pw"/>
                                     <constraint firstItem="vAI-Xp-6qi" firstAttribute="top" secondItem="nab-TD-AvP" secondAttribute="top" constant="65" id="juf-oH-tKj"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0T-WY-heh" userLabel="BottomSection" customClass="DesignableView" customModule="COVID19" customModuleProvider="target">
+                                <rect key="frame" x="16" y="634" width="382" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great news! This product kills COVID-19 germs. Help your friends and family stay safe and informed." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZu-rW-Ozt" userLabel="MSG">
+                                        <rect key="frame" x="40" y="40" width="302" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db8-oE-az9" customClass="DesignableButton" customModule="COVID19" customModuleProvider="target">
+                                        <rect key="frame" x="116" y="130" width="150" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="fZJ-9x-nkw"/>
+                                            <constraint firstAttribute="width" constant="150" id="mCy-ce-63U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="Fnv-qc-hc0" eventType="touchUpInside" id="d8z-nA-E0a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="db8-oE-az9" firstAttribute="centerX" secondItem="l0T-WY-heh" secondAttribute="centerX" id="4k6-qx-Vtl"/>
+                                    <constraint firstAttribute="bottom" secondItem="db8-oE-az9" secondAttribute="bottom" constant="40" id="KL7-Cb-xBj"/>
+                                    <constraint firstItem="CZu-rW-Ozt" firstAttribute="centerX" secondItem="l0T-WY-heh" secondAttribute="centerX" id="YIl-B4-foo"/>
+                                    <constraint firstItem="CZu-rW-Ozt" firstAttribute="top" secondItem="l0T-WY-heh" secondAttribute="top" constant="40" id="Zjp-wq-nCy"/>
+                                    <constraint firstAttribute="trailing" secondItem="CZu-rW-Ozt" secondAttribute="trailing" constant="40" id="a3k-kK-FQc"/>
+                                    <constraint firstAttribute="height" constant="222" id="uxF-q9-VVz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0h-SC-1jS">
+                                <rect key="frame" x="89.5" y="223" width="235" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8qa-8c-M7D">
+                                        <rect key="frame" x="25.5" y="25" width="184" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="tPb-wS-W7a"/>
+                                            <constraint firstAttribute="height" constant="270" id="yte-vq-yzQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="6I0-Ii-Wrx"/>
+                                    <constraint firstItem="8qa-8c-M7D" firstAttribute="centerX" secondItem="U0h-SC-1jS" secondAttribute="centerX" id="QLF-85-52f"/>
+                                    <constraint firstAttribute="height" constant="320" id="vac-EP-d8F"/>
+                                    <constraint firstItem="8qa-8c-M7D" firstAttribute="centerY" secondItem="U0h-SC-1jS" secondAttribute="centerY" id="xPj-s0-mwx"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rBu-Sv-pcV" firstAttribute="bottom" secondItem="db8-oE-az9" secondAttribute="bottom" constant="101" id="ACC-AL-ruy" userLabel="shareBottom"/>
+                            <constraint firstItem="U0h-SC-1jS" firstAttribute="centerX" secondItem="rBu-Sv-pcV" secondAttribute="centerX" id="44X-CA-4Mm"/>
                             <constraint firstItem="kIi-zx-I99" firstAttribute="leading" secondItem="rBu-Sv-pcV" secondAttribute="leading" id="AJj-y4-vpF"/>
+                            <constraint firstItem="rBu-Sv-pcV" firstAttribute="trailing" secondItem="l0T-WY-heh" secondAttribute="trailing" constant="16" id="Dhb-XO-KDu"/>
+                            <constraint firstItem="U0h-SC-1jS" firstAttribute="top" secondItem="nab-TD-AvP" secondAttribute="bottom" constant="97" id="MwS-L4-Pgg"/>
                             <constraint firstItem="rBu-Sv-pcV" firstAttribute="trailing" secondItem="kIi-zx-I99" secondAttribute="trailing" id="Nl4-cm-7vH"/>
-                            <constraint firstItem="ens-rT-Qar" firstAttribute="centerX" secondItem="rBu-Sv-pcV" secondAttribute="centerX" id="PO3-mN-p7Y" userLabel="noCenterX"/>
-                            <constraint firstItem="ens-rT-Qar" firstAttribute="top" secondItem="db8-oE-az9" secondAttribute="bottom" constant="14" id="QRf-4W-cdc" userLabel="noTop"/>
                             <constraint firstItem="rBu-Sv-pcV" firstAttribute="trailing" secondItem="nab-TD-AvP" secondAttribute="trailing" constant="-2" id="UK9-qX-yvJ" userLabel="bannerTrailing"/>
                             <constraint firstItem="nab-TD-AvP" firstAttribute="leading" secondItem="ca8-1F-w2A" secondAttribute="leading" constant="-2" id="Vka-30-avj" userLabel="bannerLeading"/>
                             <constraint firstItem="kIi-zx-I99" firstAttribute="top" secondItem="ca8-1F-w2A" secondAttribute="top" id="WOV-7g-coz"/>
-                            <constraint firstItem="db8-oE-az9" firstAttribute="centerX" secondItem="rBu-Sv-pcV" secondAttribute="centerX" id="fuC-Wz-S0d" userLabel="shareCenterX"/>
+                            <constraint firstAttribute="bottom" secondItem="l0T-WY-heh" secondAttribute="bottom" constant="40" id="eqv-fZ-iSF" userLabel="BSbottom"/>
+                            <constraint firstItem="l0T-WY-heh" firstAttribute="centerX" secondItem="rBu-Sv-pcV" secondAttribute="centerX" id="gDt-mM-qiL"/>
                             <constraint firstItem="nab-TD-AvP" firstAttribute="top" secondItem="ca8-1F-w2A" secondAttribute="top" constant="-2" id="yGG-O0-LDG" userLabel="bannerTop"/>
+                            <constraint firstItem="l0T-WY-heh" firstAttribute="leading" secondItem="rBu-Sv-pcV" secondAttribute="leading" constant="16" id="z4H-YV-v1H" userLabel="BSleading"/>
                             <constraint firstAttribute="bottom" secondItem="kIi-zx-I99" secondAttribute="bottom" id="znB-YD-UyM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rBu-Sv-pcV"/>
@@ -190,7 +217,7 @@
                         <outlet property="bannerTitleLabel" destination="vAI-Xp-6qi" id="IP4-22-qz2"/>
                         <outlet property="bannerView" destination="nab-TD-AvP" id="D5j-K6-BR8"/>
                         <outlet property="imageView" destination="kIi-zx-I99" id="Yzz-bh-BN4"/>
-                        <outlet property="noThanksLabel" destination="ens-rT-Qar" id="Lhw-92-jEu"/>
+                        <outlet property="previewImageView" destination="8qa-8c-M7D" id="176-L8-daU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltZ-Y1-1no" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -509,7 +536,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="V8t-C1-GSf"/>
-        <segue reference="ZbP-Mw-ybl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Flash On Icon" width="24" height="24"/>
@@ -520,7 +546,6 @@
         <image name="bottomR" width="18" height="18"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="snipe_icon" width="212" height="222"/>
         <image name="topL" width="18" height="18"/>
         <image name="topR" width="18" height="18"/>
     </resources>
