@@ -21,7 +21,6 @@ class CaptureManager: NSObject {
 
     override init() {
         super.init()
-        session = AVCaptureSession()
         self.configureDeviceInputsOutputs()
         
         // 3
@@ -33,11 +32,13 @@ class CaptureManager: NSObject {
     private func configureDeviceInputsOutputs() {
         //setup input
         
-        // Set media type as video because we want a live stream so it should always be running
+        // 1. Set media type as video because we want a live stream so it should always be running
         let device = AVCaptureDevice.default(for: .video)
 
-        // 2
-        // The input is what the camera sees
+        // 2. The input is what the device sees or hears
+        // initialize an input for our device
+        // initialize a session, and add our input
+        session = AVCaptureSession()
         let input = try! AVCaptureDeviceInput(device: device!)
         session?.addInput(input)
 
@@ -48,7 +49,7 @@ class CaptureManager: NSObject {
         self.session?.addOutput(output)
         
     }
-    func statSession() {
+    func startSession() {
         session?.startRunning()
     }
 

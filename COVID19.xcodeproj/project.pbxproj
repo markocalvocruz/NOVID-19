@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0238BD2464F84600232914 /* Product Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD0238B92464F84600232914 /* Product Sans Regular.ttf */; };
+		AD0238C22464F97000232914 /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD0238C12464F97000232914 /* Product Sans Bold.ttf */; };
 		AD2AB9CB242BF68500B44B4F /* OutLineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */; };
 		AD45327C242BD29C00B08ABD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45327B242BD29C00B08ABD /* UIView.swift */; };
+		AD4DD0F02464AE1D00AA2E49 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DD0EF2464AE1D00AA2E49 /* ActionView.swift */; };
 		AD5F81A5241C541900F191B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81A4241C541900F191B8 /* AppDelegate.swift */; };
 		AD5F81A7241C541900F191B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81A6241C541900F191B8 /* SceneDelegate.swift */; };
-		AD5F81A9241C541900F191B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81A8241C541900F191B8 /* ViewController.swift */; };
+		AD5F81A9241C541900F191B8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81A8241C541900F191B8 /* ListViewController.swift */; };
 		AD5F81AC241C541900F191B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5F81AA241C541900F191B8 /* Main.storyboard */; };
 		AD5F81AE241C541B00F191B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5F81AD241C541B00F191B8 /* Assets.xcassets */; };
 		AD5F81B1241C541B00F191B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5F81AF241C541B00F191B8 /* LaunchScreen.storyboard */; };
@@ -53,7 +56,7 @@
 		ADFBB2A424244ABA00AEE3BD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB28724244ABA00AEE3BD /* LoadingView.swift */; };
 		ADFBB2A624244ABA00AEE3BD /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB28924244ABA00AEE3BD /* AsyncImageView.swift */; };
 		ADFBB2A824246BC800AEE3BD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2A724246BC800AEE3BD /* CameraViewController.swift */; };
-		ADFBB2AA24249DB200AEE3BD /* CoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2A924249DB200AEE3BD /* CoreApp.swift */; };
+		ADFBB2AA24249DB200AEE3BD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2A924249DB200AEE3BD /* DataManager.swift */; };
 		ADFBB2AC2425B90900AEE3BD /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2AB2425B90900AEE3BD /* CaptureManager.swift */; };
 		ADFBB2AE2425B92B00AEE3BD /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2AD2425B92B00AEE3BD /* VisionManager.swift */; };
 		ADFBB2B22426AD4000AEE3BD /* Pods_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200A0146655A0C4B6B39E7D /* Pods_COVID19.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -89,12 +92,15 @@
 		2200A0146655A0C4B6B39E7D /* Pods_COVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746885551F80ACFB2EF925DE /* Pods-COVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.release.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.release.xcconfig"; sourceTree = "<group>"; };
 		98C7EEEBCA7661C7E6FFD232 /* Pods-COVID19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19Tests.debug.xcconfig"; path = "Target Support Files/Pods-COVID19Tests/Pods-COVID19Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0238B92464F84600232914 /* Product Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Regular.ttf"; sourceTree = "<group>"; };
+		AD0238C12464F97000232914 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold.ttf"; sourceTree = "<group>"; };
 		AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineLabel.swift; sourceTree = "<group>"; };
 		AD45327B242BD29C00B08ABD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AD4DD0EF2464AE1D00AA2E49 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		AD5F81A1241C541900F191B8 /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5F81A4241C541900F191B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5F81A6241C541900F191B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD5F81A8241C541900F191B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD5F81A8241C541900F191B8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		AD5F81AB241C541900F191B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD5F81AD241C541B00F191B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5F81B0241C541B00F191B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,7 +147,7 @@
 		ADFBB28724244ABA00AEE3BD /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		ADFBB28924244ABA00AEE3BD /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		ADFBB2A724246BC800AEE3BD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		ADFBB2A924249DB200AEE3BD /* CoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreApp.swift; sourceTree = "<group>"; };
+		ADFBB2A924249DB200AEE3BD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		ADFBB2AB2425B90900AEE3BD /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
 		ADFBB2AD2425B92B00AEE3BD /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
 		C4EEA0214CE77420E6CAF784 /* Pods-COVID19Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19Tests.release.xcconfig"; path = "Target Support Files/Pods-COVID19Tests/Pods-COVID19Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,23 +218,21 @@
 			isa = PBXGroup;
 			children = (
 				AD5F81A4241C541900F191B8 /* AppDelegate.swift */,
+				AD0238B92464F84600232914 /* Product Sans Regular.ttf */,
 				AD5F81A6241C541900F191B8 /* SceneDelegate.swift */,
-				AD5F81A8241C541900F191B8 /* ViewController.swift */,
 				ADFBB2A724246BC800AEE3BD /* CameraViewController.swift */,
 				AD99FBA32423F5EB00ACEABD /* ImageViewController.swift */,
-				AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */,
-				ADFBB2A924249DB200AEE3BD /* CoreApp.swift */,
-				AD71FBC72427032A0076DFE7 /* FirebaseCameraViewController.swift */,
+				ADFBB2A924249DB200AEE3BD /* DataManager.swift */,
+				AD0238C12464F97000232914 /* Product Sans Bold.ttf */,
 				ADFBB2AD2425B92B00AEE3BD /* VisionManager.swift */,
-				AD71FBCA242711AD0076DFE7 /* GoogleService-Info.plist */,
 				ADFBB2AB2425B90900AEE3BD /* CaptureManager.swift */,
-				AD5F81C6241C904C00F191B8 /* Product.swift */,
 				AD5F81C8241E9C4000F191B8 /* Models */,
 				AD5F81AA241C541900F191B8 /* Main.storyboard */,
+				AD4DD0EF2464AE1D00AA2E49 /* ActionView.swift */,
 				AD45327B242BD29C00B08ABD /* UIView.swift */,
-				AD5F81EB241EDA5300F191B8 /* ProductTableViewCell.swift */,
 				AD71FBC9242704440076DFE7 /* Deprecated */,
 				AD5F81AD241C541B00F191B8 /* Assets.xcassets */,
+				AD71FBCA242711AD0076DFE7 /* GoogleService-Info.plist */,
 				AD5F81AF241C541B00F191B8 /* LaunchScreen.storyboard */,
 				AD5F81B2241C541B00F191B8 /* Info.plist */,
 				ADFBB26B24244ABA00AEE3BD /* Spring */,
@@ -248,6 +252,7 @@
 		AD5F81C8241E9C4000F191B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F81C6241C904C00F191B8 /* Product.swift */,
 				AD5F81CB241E9C4000F191B8 /* Json4Swift_Base.swift */,
 				AD5F81CD241E9C4000F191B8 /* Entry.swift */,
 			);
@@ -257,6 +262,10 @@
 		AD71FBC9242704440076DFE7 /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
+				AD71FBC72427032A0076DFE7 /* FirebaseCameraViewController.swift */,
+				AD5F81EB241EDA5300F191B8 /* ProductTableViewCell.swift */,
+				AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */,
+				AD5F81A8241C541900F191B8 /* ListViewController.swift */,
 				ADC337702422A8B60064A3AA /* DeprecatedCameraViewController.swift */,
 				ADC337722422AC980064A3AA /* CameraController.swift */,
 			);
@@ -385,7 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5F81B1241C541B00F191B8 /* LaunchScreen.storyboard in Resources */,
+				AD0238C22464F97000232914 /* Product Sans Bold.ttf in Resources */,
 				ADFBB29E24244ABA00AEE3BD /* LoadingView.xib in Resources */,
+				AD0238BD2464F84600232914 /* Product Sans Regular.ttf in Resources */,
 				AD71FBCB242711AD0076DFE7 /* GoogleService-Info.plist in Resources */,
 				AD5F81AE241C541B00F191B8 /* Assets.xcassets in Resources */,
 				AD5F81AC241C541900F191B8 /* Main.storyboard in Resources */,
@@ -473,7 +484,8 @@
 				ADFBB28A24244ABA00AEE3BD /* DesignableImageView.swift in Sources */,
 				ADFBB29024244ABA00AEE3BD /* SpringImageView.swift in Sources */,
 				AD71FBC82427032A0076DFE7 /* FirebaseCameraViewController.swift in Sources */,
-				AD5F81A9241C541900F191B8 /* ViewController.swift in Sources */,
+				AD4DD0F02464AE1D00AA2E49 /* ActionView.swift in Sources */,
+				AD5F81A9241C541900F191B8 /* ListViewController.swift in Sources */,
 				ADFBB28E24244ABA00AEE3BD /* ImageLoader.swift in Sources */,
 				AD5F81C7241C904C00F191B8 /* Product.swift in Sources */,
 				ADFBB2A124244ABA00AEE3BD /* AutoTextView.swift in Sources */,
@@ -483,7 +495,7 @@
 				AD99FBA42423F5EB00ACEABD /* ImageViewController.swift in Sources */,
 				AD5F81EC241EDA5300F191B8 /* ProductTableViewCell.swift in Sources */,
 				AD5F81A5241C541900F191B8 /* AppDelegate.swift in Sources */,
-				ADFBB2AA24249DB200AEE3BD /* CoreApp.swift in Sources */,
+				ADFBB2AA24249DB200AEE3BD /* DataManager.swift in Sources */,
 				ADFBB28B24244ABA00AEE3BD /* KeyboardLayoutConstraint.swift in Sources */,
 				ADFBB29724244ABA00AEE3BD /* Misc.swift in Sources */,
 				ADFBB29B24244ABA00AEE3BD /* DesignableView.swift in Sources */,
@@ -680,7 +692,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "helloU.COVID-19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -701,7 +713,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "helloU.COVID-19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

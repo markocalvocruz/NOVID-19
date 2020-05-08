@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
     var host = "spreadsheets.google.com"
     var id = "1GNOa-8FtKdLDesBfcoXNgquA1RxF3JZp4MzxWPTjXvw"
     var sheet: Int = 1
-    var products: [Entry] = []
+    //var products: [Entry] = []
     //var sections: [String] { return Array(Set(filteredProducts.map {String(($0.gsx$companydistributor?.t?.first ?? Character(" ")))})).sorted()}
     var filteredProducts: [Entry] = []
     var searchController: UISearchController!
@@ -44,8 +44,10 @@ class ViewController: UIViewController {
                 do {
                     let responseModel = try JSONDecoder().decode(Json4Swift_Base.self, from: data)
                     guard let entries = responseModel.feed?.entry else { fatalError("Could not retrieve products")}
-                    self?.products = entries
-                    self?.filteredProducts = []//entries
+                    DataManager.products = entries
+                    //self?.products = entries
+                    self?.filteredProducts = DataManager.products//entries
+                    self?.navigationController?.title = "\(DataManager.products.count) Approved Products"
                    // print(self?.sections)
                     DispatchQueue.main.async {
                         self?.tableView.reloadData()
@@ -77,7 +79,7 @@ class ViewController: UIViewController {
 
     }
 }
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredProducts.count
     }
@@ -89,19 +91,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
-//    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//        return sections
-//    }
-      
+
 
     
 }
 
 
-extension ViewController: UISearchResultsUpdating {
+extension ListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
-            filteredProducts = searchText.isEmpty ? CoreApp.products : CoreApp.products.filter({(product: Entry) -> Bool in
+            filteredProducts = searchText.isEmpty ? DataManager.products : DataManager.products.filter({(product: Entry) -> Bool in
                 return product.name?.t!.range(of: searchText, options: .caseInsensitive) != nil
             })
         }

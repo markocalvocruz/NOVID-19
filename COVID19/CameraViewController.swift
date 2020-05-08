@@ -14,7 +14,9 @@ import Vision
 
 class CameraViewController: UIViewController {
 
-
+   override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     //CAMERA VARIABLES
     var outputImage: UIImage?
@@ -81,7 +83,7 @@ extension CameraViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        CaptureManager.shared.statSession()
+        CaptureManager.shared.startSession()
         CaptureManager.shared.delegate = self
         customPreviewLayer = CaptureManager.shared.customPreviewLayer
         VisionManager.shared.startTextDetection()
@@ -124,7 +126,7 @@ extension CameraViewController: CaptureManagerDelegate, VisionManagerDelegate {
     func processCapturedText(text: String) {
         print("procesCapturedText called for \(text)")
         outputText = text
-        product = CoreApp.searchProductsForString(text)
+        product = DataManager.searchProductsForString(text)
 
        // print("prod: \(prod)")
         if let product = product {
@@ -154,6 +156,7 @@ extension CameraViewController {
                 return
             }
             print("IMAGE FOUND \(image)")
+            print("PRODUCT FOUND: \(productFound)")
             let vc = segue.destination as! ImageViewController
             vc.productFound = productFound
             vc.image = image
@@ -169,7 +172,7 @@ extension CameraViewController {
                 do {
                     let responseModel = try JSONDecoder().decode(Json4Swift_Base.self, from: data)
                     guard let entries = responseModel.feed?.entry else { fatalError("Could not retrieve products")}
-                    CoreApp.products = entries
+                    DataManager.products = entries
                     print("decoded")
                 } catch {
                     print(error)
