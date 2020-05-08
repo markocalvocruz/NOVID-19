@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C87F0AE65C60AF4C661B9D3 /* Pods_NOVID_19Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3499A4ADE61182DC821166A /* Pods_NOVID_19Tests.framework */; };
+		7994EF80B4BCF458A7C38411 /* Pods_NOVID_19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5009A9668CB52F1BF692D604 /* Pods_NOVID_19.framework */; };
 		AD0238BD2464F84600232914 /* Product Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD0238B92464F84600232914 /* Product Sans Regular.ttf */; };
 		AD0238C22464F97000232914 /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD0238C12464F97000232914 /* Product Sans Bold.ttf */; };
 		AD2AB9CB242BF68500B44B4F /* OutLineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */; };
@@ -25,7 +27,7 @@
 		AD5F81EC241EDA5300F191B8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81EB241EDA5300F191B8 /* ProductTableViewCell.swift */; };
 		AD71FBC82427032A0076DFE7 /* FirebaseCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71FBC72427032A0076DFE7 /* FirebaseCameraViewController.swift */; };
 		AD99FBA42423F5EB00ACEABD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99FBA32423F5EB00ACEABD /* ImageViewController.swift */; };
-		AD99FBA9242446AE00ACEABD /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD99FBA9242446AE00ACEABD /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADFBB28A24244ABA00AEE3BD /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB26C24244ABA00AEE3BD /* DesignableImageView.swift */; };
 		ADFBB28B24244ABA00AEE3BD /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB26D24244ABA00AEE3BD /* KeyboardLayoutConstraint.swift */; };
 		ADFBB28C24244ABA00AEE3BD /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB26E24244ABA00AEE3BD /* TransitionManager.swift */; };
@@ -58,8 +60,6 @@
 		ADFBB2AA24249DB200AEE3BD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2A924249DB200AEE3BD /* DataManager.swift */; };
 		ADFBB2AC2425B90900AEE3BD /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2AB2425B90900AEE3BD /* CaptureManager.swift */; };
 		ADFBB2AE2425B92B00AEE3BD /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB2AD2425B92B00AEE3BD /* VisionManager.swift */; };
-		ADFBB2B22426AD4000AEE3BD /* Pods_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2200A0146655A0C4B6B39E7D /* Pods_COVID19.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D6FFD6108B6777FF7DA4063C /* Pods_COVID19Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136AF05EF2F31B9DD53064A1 /* Pods_COVID19Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD99FBA9242446AE00ACEABD /* (null) in Embed Frameworks */,
+				AD99FBA9242446AE00ACEABD /* BuildFile in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,10 +87,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		136AF05EF2F31B9DD53064A1 /* Pods_COVID19Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2200A0146655A0C4B6B39E7D /* Pods_COVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		302AFFADA4FB2D9BC94AA175 /* Pods-NOVID-19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOVID-19Tests.debug.xcconfig"; path = "Target Support Files/Pods-NOVID-19Tests/Pods-NOVID-19Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		36B53C89817C0971C7C4BC35 /* Pods-NOVID-19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOVID-19.debug.xcconfig"; path = "Target Support Files/Pods-NOVID-19/Pods-NOVID-19.debug.xcconfig"; sourceTree = "<group>"; };
+		5009A9668CB52F1BF692D604 /* Pods_NOVID_19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NOVID_19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746885551F80ACFB2EF925DE /* Pods-COVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.release.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.release.xcconfig"; sourceTree = "<group>"; };
 		98C7EEEBCA7661C7E6FFD232 /* Pods-COVID19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19Tests.debug.xcconfig"; path = "Target Support Files/Pods-COVID19Tests/Pods-COVID19Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D17532ADF9F8C8D88A9A267 /* Pods-NOVID-19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOVID-19.release.xcconfig"; path = "Target Support Files/Pods-NOVID-19/Pods-NOVID-19.release.xcconfig"; sourceTree = "<group>"; };
 		AD0238B92464F84600232914 /* Product Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Regular.ttf"; sourceTree = "<group>"; };
 		AD0238C12464F97000232914 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold.ttf"; sourceTree = "<group>"; };
 		AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineLabel.swift; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 		AD5F81AD241C541B00F191B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5F81B0241C541B00F191B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD5F81B2241C541B00F191B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD5F81B7241C541B00F191B8 /* COVID19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COVID19Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5F81B7241C541B00F191B8 /* NOVID-19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NOVID-19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5F81BB241C541B00F191B8 /* COVID19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID19Tests.swift; sourceTree = "<group>"; };
 		AD5F81BD241C541B00F191B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5F81C6241C904C00F191B8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -148,8 +150,10 @@
 		ADFBB2A924249DB200AEE3BD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		ADFBB2AB2425B90900AEE3BD /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
 		ADFBB2AD2425B92B00AEE3BD /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
+		C3499A4ADE61182DC821166A /* Pods_NOVID_19Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NOVID_19Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EEA0214CE77420E6CAF784 /* Pods-COVID19Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19Tests.release.xcconfig"; path = "Target Support Files/Pods-COVID19Tests/Pods-COVID19Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D5DC2356B51541171FB8DDEE /* Pods-COVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.debug.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.debug.xcconfig"; sourceTree = "<group>"; };
+		E306B2CAA6C5C3A8FF8C170C /* Pods-NOVID-19Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOVID-19Tests.release.xcconfig"; path = "Target Support Files/Pods-NOVID-19Tests/Pods-NOVID-19Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADFBB2B22426AD4000AEE3BD /* Pods_COVID19.framework in Frameworks */,
+				7994EF80B4BCF458A7C38411 /* Pods_NOVID_19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FFD6108B6777FF7DA4063C /* Pods_COVID19Tests.framework in Frameworks */,
+				5C87F0AE65C60AF4C661B9D3 /* Pods_NOVID_19Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +179,8 @@
 		2A285DEA87A738E5BF27A3BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2200A0146655A0C4B6B39E7D /* Pods_COVID19.framework */,
-				136AF05EF2F31B9DD53064A1 /* Pods_COVID19Tests.framework */,
+				5009A9668CB52F1BF692D604 /* Pods_NOVID_19.framework */,
+				C3499A4ADE61182DC821166A /* Pods_NOVID_19Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +192,10 @@
 				746885551F80ACFB2EF925DE /* Pods-COVID19.release.xcconfig */,
 				98C7EEEBCA7661C7E6FFD232 /* Pods-COVID19Tests.debug.xcconfig */,
 				C4EEA0214CE77420E6CAF784 /* Pods-COVID19Tests.release.xcconfig */,
+				36B53C89817C0971C7C4BC35 /* Pods-NOVID-19.debug.xcconfig */,
+				9D17532ADF9F8C8D88A9A267 /* Pods-NOVID-19.release.xcconfig */,
+				302AFFADA4FB2D9BC94AA175 /* Pods-NOVID-19Tests.debug.xcconfig */,
+				E306B2CAA6C5C3A8FF8C170C /* Pods-NOVID-19Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -207,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5F81A1241C541900F191B8 /* NOVID-19.app */,
-				AD5F81B7241C541B00F191B8 /* COVID19Tests.xctest */,
+				AD5F81B7241C541B00F191B8 /* NOVID-19Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD5F81A0241C541900F191B8 /* COVID19 */ = {
+		AD5F81A0241C541900F191B8 /* NOVID-19 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD5F81C0241C541B00F191B8 /* Build configuration list for PBXNativeTarget "COVID19" */;
+			buildConfigurationList = AD5F81C0241C541B00F191B8 /* Build configuration list for PBXNativeTarget "NOVID-19" */;
 			buildPhases = (
 				8661F9E5129B38ACD9117622 /* [CP] Check Pods Manifest.lock */,
 				AD5F819D241C541900F191B8 /* Sources */,
@@ -323,14 +331,14 @@
 			);
 			dependencies = (
 			);
-			name = COVID19;
+			name = "NOVID-19";
 			productName = COVID19;
 			productReference = AD5F81A1241C541900F191B8 /* NOVID-19.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD5F81B6241C541B00F191B8 /* COVID19Tests */ = {
+		AD5F81B6241C541B00F191B8 /* NOVID-19Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD5F81C3241C541B00F191B8 /* Build configuration list for PBXNativeTarget "COVID19Tests" */;
+			buildConfigurationList = AD5F81C3241C541B00F191B8 /* Build configuration list for PBXNativeTarget "NOVID-19Tests" */;
 			buildPhases = (
 				14AB20B5E906B833B229A204 /* [CP] Check Pods Manifest.lock */,
 				AD5F81B3241C541B00F191B8 /* Sources */,
@@ -342,9 +350,9 @@
 			dependencies = (
 				AD5F81B9241C541B00F191B8 /* PBXTargetDependency */,
 			);
-			name = COVID19Tests;
+			name = "NOVID-19Tests";
 			productName = COVID19Tests;
-			productReference = AD5F81B7241C541B00F191B8 /* COVID19Tests.xctest */;
+			productReference = AD5F81B7241C541B00F191B8 /* NOVID-19Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -379,8 +387,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD5F81A0241C541900F191B8 /* COVID19 */,
-				AD5F81B6241C541B00F191B8 /* COVID19Tests */,
+				AD5F81A0241C541900F191B8 /* NOVID-19 */,
+				AD5F81B6241C541B00F191B8 /* NOVID-19Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +432,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-COVID19Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NOVID-19Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +454,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-COVID19-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NOVID-19-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -459,15 +467,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NOVID-19/Pods-NOVID-19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NOVID-19/Pods-NOVID-19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NOVID-19/Pods-NOVID-19-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -536,7 +544,7 @@
 /* Begin PBXTargetDependency section */
 		AD5F81B9241C541B00F191B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD5F81A0241C541900F191B8 /* COVID19 */;
+			target = AD5F81A0241C541900F191B8 /* NOVID-19 */;
 			targetProxy = AD5F81B8241C541B00F191B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -677,13 +685,13 @@
 		};
 		AD5F81C1241C541B00F191B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5DC2356B51541171FB8DDEE /* Pods-COVID19.debug.xcconfig */;
+			baseConfigurationReference = 36B53C89817C0971C7C4BC35 /* Pods-NOVID-19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FBYR25582N;
-				INFOPLIST_FILE = COVID19/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NOVID19/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,13 +706,13 @@
 		};
 		AD5F81C2241C541B00F191B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 746885551F80ACFB2EF925DE /* Pods-COVID19.release.xcconfig */;
+			baseConfigurationReference = 9D17532ADF9F8C8D88A9A267 /* Pods-NOVID-19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FBYR25582N;
-				INFOPLIST_FILE = COVID19/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NOVID19/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,20 +727,20 @@
 		};
 		AD5F81C4241C541B00F191B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C7EEEBCA7661C7E6FFD232 /* Pods-COVID19Tests.debug.xcconfig */;
+			baseConfigurationReference = 302AFFADA4FB2D9BC94AA175 /* Pods-NOVID-19Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5M2Z56ATV;
-				INFOPLIST_FILE = COVID19Tests/Info.plist;
+				INFOPLIST_FILE = "NOVID-19Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = helloU.COVID19Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -742,20 +750,20 @@
 		};
 		AD5F81C5241C541B00F191B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4EEA0214CE77420E6CAF784 /* Pods-COVID19Tests.release.xcconfig */;
+			baseConfigurationReference = E306B2CAA6C5C3A8FF8C170C /* Pods-NOVID-19Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5M2Z56ATV;
-				INFOPLIST_FILE = COVID19Tests/Info.plist;
+				INFOPLIST_FILE = "NOVID-19Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = helloU.COVID19Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -775,7 +783,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD5F81C0241C541B00F191B8 /* Build configuration list for PBXNativeTarget "COVID19" */ = {
+		AD5F81C0241C541B00F191B8 /* Build configuration list for PBXNativeTarget "NOVID-19" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD5F81C1241C541B00F191B8 /* Debug */,
@@ -784,7 +792,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD5F81C3241C541B00F191B8 /* Build configuration list for PBXNativeTarget "COVID19Tests" */ = {
+		AD5F81C3241C541B00F191B8 /* Build configuration list for PBXNativeTarget "NOVID-19Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD5F81C4241C541B00F191B8 /* Debug */,
