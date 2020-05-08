@@ -96,7 +96,7 @@
 		AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineLabel.swift; sourceTree = "<group>"; };
 		AD45327B242BD29C00B08ABD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		AD4DD0EF2464AE1D00AA2E49 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		AD5F81A1241C541900F191B8 /* NOVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5F81A1241C541900F191B8 /* NOVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NOVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5F81A4241C541900F191B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5F81A6241C541900F191B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD5F81A8241C541900F191B8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		AD5F8198241C541900F191B8 = {
 			isa = PBXGroup;
 			children = (
-				AD5F81A3241C541900F191B8 /* COVID19 */,
+				AD5F81A3241C541900F191B8 /* NOVID19 */,
 				AD5F81BA241C541B00F191B8 /* COVID19Tests */,
 				AD5F81A2241C541900F191B8 /* Products */,
 				648B969206EF03D2AB8AF0D2 /* Pods */,
@@ -206,13 +206,13 @@
 		AD5F81A2241C541900F191B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD5F81A1241C541900F191B8 /* NOVID19.app */,
+				AD5F81A1241C541900F191B8 /* NOVID-19.app */,
 				AD5F81B7241C541B00F191B8 /* COVID19Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD5F81A3241C541900F191B8 /* COVID19 */ = {
+		AD5F81A3241C541900F191B8 /* NOVID19 */ = {
 			isa = PBXGroup;
 			children = (
 				AD5F81A4241C541900F191B8 /* AppDelegate.swift */,
@@ -234,7 +234,7 @@
 				AD5F81B2241C541B00F191B8 /* Info.plist */,
 				ADFBB26B24244ABA00AEE3BD /* Spring */,
 			);
-			path = COVID19;
+			path = NOVID19;
 			sourceTree = "<group>";
 		};
 		AD5F81BA241C541B00F191B8 /* COVID19Tests */ = {
@@ -325,7 +325,7 @@
 			);
 			name = COVID19;
 			productName = COVID19;
-			productReference = AD5F81A1241C541900F191B8 /* NOVID19.app */;
+			productReference = AD5F81A1241C541900F191B8 /* NOVID-19.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AD5F81B6241C541B00F191B8 /* COVID19Tests */ = {
@@ -366,7 +366,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD5F819C241C541900F191B8 /* Build configuration list for PBXProject "NOVID19" */;
+			buildConfigurationList = AD5F819C241C541900F191B8 /* Build configuration list for PBXProject "NOVID-19" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -690,7 +690,7 @@
 				);
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19";
-				PRODUCT_NAME = NOVID19;
+				PRODUCT_NAME = "NOVID-19";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -711,7 +711,7 @@
 				);
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19";
-				PRODUCT_NAME = NOVID19;
+				PRODUCT_NAME = "NOVID-19";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -766,7 +766,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD5F819C241C541900F191B8 /* Build configuration list for PBXProject "NOVID19" */ = {
+		AD5F819C241C541900F191B8 /* Build configuration list for PBXProject "NOVID-19" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD5F81BE241C541B00F191B8 /* Debug */,
