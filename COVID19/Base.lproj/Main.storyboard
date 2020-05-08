@@ -232,7 +232,7 @@
                                                             <segue destination="cHy-pc-hLH" kind="presentation" modalPresentationStyle="overFullScreen" id="vVd-fM-OaY"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db8-oE-az9" customClass="DesignableButton" customModule="COVID19" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db8-oE-az9" customClass="DesignableButton" customModule="COVID19" customModuleProvider="target">
                                                         <rect key="frame" x="158" y="0.0" width="150" height="52"/>
                                                         <color key="backgroundColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>

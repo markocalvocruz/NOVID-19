@@ -24,7 +24,6 @@
 		AD5F81DE241E9C4000F191B8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81CD241E9C4000F191B8 /* Entry.swift */; };
 		AD5F81EC241EDA5300F191B8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F81EB241EDA5300F191B8 /* ProductTableViewCell.swift */; };
 		AD71FBC82427032A0076DFE7 /* FirebaseCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71FBC72427032A0076DFE7 /* FirebaseCameraViewController.swift */; };
-		AD71FBCB242711AD0076DFE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71FBCA242711AD0076DFE7 /* GoogleService-Info.plist */; };
 		AD99FBA42423F5EB00ACEABD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99FBA32423F5EB00ACEABD /* ImageViewController.swift */; };
 		AD99FBA9242446AE00ACEABD /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADFBB28A24244ABA00AEE3BD /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB26C24244ABA00AEE3BD /* DesignableImageView.swift */; };
@@ -97,7 +96,7 @@
 		AD2AB9CA242BF68500B44B4F /* OutLineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineLabel.swift; sourceTree = "<group>"; };
 		AD45327B242BD29C00B08ABD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		AD4DD0EF2464AE1D00AA2E49 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		AD5F81A1241C541900F191B8 /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5F81A1241C541900F191B8 /* NOVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5F81A4241C541900F191B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5F81A6241C541900F191B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD5F81A8241C541900F191B8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 		AD5F81CD241E9C4000F191B8 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		AD5F81EB241EDA5300F191B8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		AD71FBC72427032A0076DFE7 /* FirebaseCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCameraViewController.swift; sourceTree = "<group>"; };
-		AD71FBCA242711AD0076DFE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD99FBA32423F5EB00ACEABD /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		ADC337702422A8B60064A3AA /* DeprecatedCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedCameraViewController.swift; sourceTree = "<group>"; };
 		ADC337722422AC980064A3AA /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
@@ -208,7 +206,7 @@
 		AD5F81A2241C541900F191B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD5F81A1241C541900F191B8 /* COVID19.app */,
+				AD5F81A1241C541900F191B8 /* NOVID19.app */,
 				AD5F81B7241C541B00F191B8 /* COVID19Tests.xctest */,
 			);
 			name = Products;
@@ -232,7 +230,6 @@
 				AD45327B242BD29C00B08ABD /* UIView.swift */,
 				AD71FBC9242704440076DFE7 /* Deprecated */,
 				AD5F81AD241C541B00F191B8 /* Assets.xcassets */,
-				AD71FBCA242711AD0076DFE7 /* GoogleService-Info.plist */,
 				AD5F81AF241C541B00F191B8 /* LaunchScreen.storyboard */,
 				AD5F81B2241C541B00F191B8 /* Info.plist */,
 				ADFBB26B24244ABA00AEE3BD /* Spring */,
@@ -328,7 +325,7 @@
 			);
 			name = COVID19;
 			productName = COVID19;
-			productReference = AD5F81A1241C541900F191B8 /* COVID19.app */;
+			productReference = AD5F81A1241C541900F191B8 /* NOVID19.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AD5F81B6241C541B00F191B8 /* COVID19Tests */ = {
@@ -397,7 +394,6 @@
 				AD0238C22464F97000232914 /* Product Sans Bold.ttf in Resources */,
 				ADFBB29E24244ABA00AEE3BD /* LoadingView.xib in Resources */,
 				AD0238BD2464F84600232914 /* Product Sans Regular.ttf in Resources */,
-				AD71FBCB242711AD0076DFE7 /* GoogleService-Info.plist in Resources */,
 				AD5F81AE241C541B00F191B8 /* Assets.xcassets in Resources */,
 				AD5F81AC241C541900F191B8 /* Main.storyboard in Resources */,
 			);
@@ -693,8 +689,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = "helloU.COVID-19";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19";
+				PRODUCT_NAME = NOVID19;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -714,8 +710,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = "helloU.COVID-19";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "helloU.NOVID-19";
+				PRODUCT_NAME = NOVID19;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
