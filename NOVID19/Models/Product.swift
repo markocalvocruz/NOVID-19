@@ -24,30 +24,10 @@ struct Product: Decodable {
         case value = "$t\\"
     }
     
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        let feed = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .feed)
-//        let entry = try feed.nestedContainer(keyedBy: CodingKeys.self, forKey: .entry)
-//
-//        let updated_container = try entry.nestedContainer(keyedBy: CodingKeys.self, forKey: .updated)
-//        updated = try updated_container.decode(Date.self, forKey: .value)
-//
-//        let name_container = try entry.nestedContainer(keyedBy: CodingKeys.self, forKey: .name)
-//        name = try name_container.decode(String.self, forKey: .value)
-//
-//        let distributor_container = try entry.nestedContainer(keyedBy: CodingKeys.self, forKey: .distributor)
-//        distributor = try distributor_container.decode(String.self, forKey: .value)
-//
-//        let epareg_container = try entry.nestedContainer(keyedBy: CodingKeys.self, forKey: .epa_reg)
-//        epa_reg = try epareg_container.decode(String.self, forKey: .value)
-//
-//
-//    }
+
     init(from decoder: Decoder) throws {
         let entry = try decoder.container(keyedBy: CodingKeys.self)
-//        let feed = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .feed)
-//        let entry = try feed.nestedContainer(keyedBy: CodingKeys.self, forKey: .entry)
-//
+
         let updated_container = try entry.nestedContainer(keyedBy: CodingKeys.self, forKey: .updated)
         updated = try updated_container.decode(Date.self, forKey: .value)
         

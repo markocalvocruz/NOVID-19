@@ -186,3 +186,82 @@ extension DeprecatedCameraViewController {
         print("no here")
     }
 }
+/*
+
+private func startLiveVideo() {
+    // 1
+    session.sessionPreset = AVCaptureSession.Preset.photo
+    // Set media type as video because we want a live stream so it should always be running
+    let captureDevice = AVCaptureDevice.default(for: .video)
+    
+    // 2
+    // The input is what the camera sees
+    // The output is what the video should appear as
+    let deviceInput = try! AVCaptureDeviceInput(device: captureDevice!)
+    let deviceOutput = AVCaptureVideoDataOutput()
+    deviceOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: Int(kCVPixelFormatType_32BGRA)]
+    deviceOutput.setSampleBufferDelegate(self, queue: DispatchQueue.global(qos: .default))
+    // Add the input and output to the AVCaptureSession
+    session.addInput(deviceInput)
+    session.addOutput(deviceOutput)
+    
+    // 3
+    // Add a sublayer containing the video preview to the imageView
+    let imageLayer = AVCaptureVideoPreviewLayer(session: session)
+    imageLayer.frame = imageView.bounds
+    imageView.layer.addSublayer(imageLayer)
+    startSession()
+
+
+}
+*/
+
+    //AVFoundation
+//    var session = AVCaptureSession()
+    
+//    //Vision Framework
+//    var requests = [VNRequest]()
+//    @objc
+//    private func randomString(length: Int) -> String {
+//
+//    }
+//    var timer = Timer()
+//    func animateNavigationHeader() {
+//        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+//       // if !detectedText.isEmpty {
+//            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(changeNavigationHeader), userInfo: nil, repeats: true)
+////        } else {
+////            timer.invalidate()
+////        }
+////    }
+//    @objc
+//    func changeNavigationHeader() {
+//        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+//        self.navigationController?.title = String((0..<30).map{ _ in letters.randomElement()! })
+//        // = randomString(length: 30)
+//    }
+//
+
+    
+//extension CameraViewController: UISearchResultsUpdating {
+//        func updateSearchResults(for searchController: UISearchController) {
+//            if let searchText = searchController.searchBar.text {
+//                filteredProducts = searchText.isEmpty ? [] : products.filter({(product: Entry) -> Bool in
+//                    return product.name?.t!.range(of: searchText, options: .caseInsensitive) != nil
+//                })
+//            }
+//        }
+//    private func prepareSearchController() {
+//
+//        //Initialize searchController
+//        searchController = UISearchController(searchResultsController: nil)
+//        searchController.searchResultsUpdater = self
+//
+//        searchController.dimsBackgroundDuringPresentation = false
+//       // searchController.searchbar.sizeToFit()
+//
+//        // Sets this view controller as presenting view controller for the search interface
+//        definesPresentationContext = true
+//    }
+//}
+

@@ -14,10 +14,10 @@ import Vision
 
 class CameraViewController: UIViewController {
 
-   override var prefersStatusBarHidden: Bool {
+    override var prefersStatusBarHidden: Bool {
         return true
     }
-    
+        
     //CAMERA VARIABLES
     var outputImage: UIImage?
     var flashMode: AVCaptureDevice.FlashMode = .off // Not currently supporting flash-mode
@@ -32,14 +32,20 @@ class CameraViewController: UIViewController {
     var host = "spreadsheets.google.com"
     var id = "1GNOa-8FtKdLDesBfcoXNgquA1RxF3JZp4MzxWPTjXvw"
     var sheet: Int = 1
-    var product: Entry?
+   // var product: Entry?
+    var product: String?
 
     //TIMER VARIABLES
     var timer = Timer()
+    var isTextTimerRunning = false
     var isTimerRunning = false
-    var seconds = 5
-    
-    @IBOutlet weak var timerLabel: UILabel!
+    var seconds: Int!
+    let PRODUCT_TIMER_MAX = 2
+    let PRODUCT_TIMER_MIN = 0
+    let TEXT_TIMER_MAX = 25
+    let TEXT_TIMER_MIN = 20
+    @IBOutlet weak var hintLabel: UILabel!
+   // @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var instructionView: UIView!
     @IBOutlet weak var barView: UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -56,26 +62,28 @@ extension CameraViewController {
         barView.backgroundColor = #colorLiteral(red: 0.4598584771, green: 0.721824944, blue: 0.9476643205, alpha: 1)
 //        view.addSubview(barView)
        barView.frame.size.height = view.frame.height
-        
-       
+       // testButton.isHighlighted
+        self.startTextTimer()
        // self.timerLabel.alpha = 0.0
     }
 
     //MARK: Func called when text is recognized by the camera
     @objc func textDetected() {
+        
         print("Text detected")
+        
         UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {
             if self.outputText.isEmpty {
                 self.instructionView.show()
             } else {
-                self.instructionView.hide()
+                    self.instructionView.hide()
+                self.hintLabel.isHidden = true
             }
         }) { [weak self] _ in
             if self?.outputText.isEmpty == false {
-//                self?.timerLabel.show()
-                self?.runTimer()
                 
-                print("TIMER CALLED")
+                self?.startProductTimer()
+                
             }
         }
 
@@ -100,12 +108,12 @@ extension CameraViewController {
         if customPreviewLayer != nil {
             customPreviewLayer!.frame = imageView.bounds
             imageView.layer.addSublayer(customPreviewLayer!)
-        } else { print("previewLayerNotLoaded")}
+        } else { print("previewLayerNotLoaded") }
         imageView.layer.sublayers?[0].frame = imageView.bounds
     }
 
     func animateBarView() {
-        UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 1.5, initialSpringVelocity: 1, options: [.repeat, .autoreverse], animations: {
+        UIView.animate(withDuration: 1.3, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1, options: [.repeat, .autoreverse], animations: {
             self.barView.transform = CGAffineTransform(translationX: self.view.frame.width + 20, y: 0)
         }, completion: nil)
     }
@@ -124,13 +132,15 @@ extension CameraViewController: CaptureManagerDelegate, VisionManagerDelegate {
 
     }
     func processCapturedText(text: String) {
-        print("procesCapturedText called for \(text)")
+        //print("procesCapturedText called for \(text)")
         outputText = text
         product = DataManager.searchProductsForString(text)
 
        // print("prod: \(prod)")
         if let product = product {
-            print("Found \(product.name), image: \(self.outputImage)")
+           // print("Found \(product.name), image: \(self.outputImage)")
+            print("Found \(product), image: \(self.outputImage)")
+
            // product = prod
             if self.outputImage != nil {
                 print("SEGUING")
@@ -160,7 +170,10 @@ extension CameraViewController {
             let vc = segue.destination as! ImageViewController
             vc.productFound = productFound
             vc.image = image
+            vc.outputText = self.outputText
         }
+        pauseTimer()
+
     }
 }
 
@@ -170,10 +183,11 @@ extension CameraViewController {
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
             if let data = data {
                 do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    print(json)
                     let responseModel = try JSONDecoder().decode(Json4Swift_Base.self, from: data)
                     guard let entries = responseModel.feed?.entry else { fatalError("Could not retrieve products")}
-                    DataManager.products = entries
-                    print("decoded")
+                    DataManager.products = entries.compactMap { $0.name?.t }
                 } catch {
                     print(error)
                 }
@@ -204,112 +218,50 @@ extension CameraViewController {
  TIMER METHODS
  */
 
+
 extension CameraViewController {
 
     @objc
     func updateTimer() {
-        print("Updating Timer")
-        if seconds >= 0 {
+        print("SECONDS: \(seconds)")
+        if (seconds >= TEXT_TIMER_MIN) {
             seconds -= 1
-        //    self.timerLabel.text = "\(seconds)"
-            if seconds == 0 { //    //self.timerLabel.hide() }
-            }
+        } else if (seconds < TEXT_TIMER_MIN) && (seconds > PRODUCT_TIMER_MAX) {
+            //user not pointing camera at text, show hint
+            pauseTimer()
+            hintLabel.isHidden = false
+        } else if (seconds >= PRODUCT_TIMER_MIN) {
+            seconds -= 1
         } else {
+            //user's product not found in registry, segue to next screen
             pauseTimer()
             performSegue(withIdentifier: "showProductImage", sender: false)
         }
+        
+      
     }
-    func pauseTimer() {
-    //    isTimerRunning = false
-//        isTimePaused = true
-        timer.invalidate()
-    }
-    
 
-    func runTimer() {
+   
+    
+    func startTextTimer() {
         if !isTimerRunning {
+            seconds = TEXT_TIMER_MAX
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo:  nil, repeats: true)
             self.isTimerRunning = true
         }
     }
+    func startProductTimer() {
+        if !isTimerRunning {
+            seconds = PRODUCT_TIMER_MAX
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo:  nil, repeats: true)
+            self.isTimerRunning = true
+        }
+    }
+
+    func pauseTimer() {
+        print("timer disabled!!!")
+        timer.invalidate()
+        self.isTimerRunning = false
+    }
 }
-
-/*
-
-private func startLiveVideo() {
-    // 1
-    session.sessionPreset = AVCaptureSession.Preset.photo
-    // Set media type as video because we want a live stream so it should always be running
-    let captureDevice = AVCaptureDevice.default(for: .video)
-    
-    // 2
-    // The input is what the camera sees
-    // The output is what the video should appear as
-    let deviceInput = try! AVCaptureDeviceInput(device: captureDevice!)
-    let deviceOutput = AVCaptureVideoDataOutput()
-    deviceOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: Int(kCVPixelFormatType_32BGRA)]
-    deviceOutput.setSampleBufferDelegate(self, queue: DispatchQueue.global(qos: .default))
-    // Add the input and output to the AVCaptureSession
-    session.addInput(deviceInput)
-    session.addOutput(deviceOutput)
-    
-    // 3
-    // Add a sublayer containing the video preview to the imageView
-    let imageLayer = AVCaptureVideoPreviewLayer(session: session)
-    imageLayer.frame = imageView.bounds
-    imageView.layer.addSublayer(imageLayer)
-    startSession()
-
-
-}
-*/
-
-    //AVFoundation
-//    var session = AVCaptureSession()
-    
-//    //Vision Framework
-//    var requests = [VNRequest]()
-//    @objc
-//    private func randomString(length: Int) -> String {
-//
-//    }
-//    var timer = Timer()
-//    func animateNavigationHeader() {
-//        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
-//       // if !detectedText.isEmpty {
-//            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(changeNavigationHeader), userInfo: nil, repeats: true)
-////        } else {
-////            timer.invalidate()
-////        }
-////    }
-//    @objc
-//    func changeNavigationHeader() {
-//        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-//        self.navigationController?.title = String((0..<30).map{ _ in letters.randomElement()! })
-//        // = randomString(length: 30)
-//    }
-//
-
-    
-//extension CameraViewController: UISearchResultsUpdating {
-//        func updateSearchResults(for searchController: UISearchController) {
-//            if let searchText = searchController.searchBar.text {
-//                filteredProducts = searchText.isEmpty ? [] : products.filter({(product: Entry) -> Bool in
-//                    return product.name?.t!.range(of: searchText, options: .caseInsensitive) != nil
-//                })
-//            }
-//        }
-//    private func prepareSearchController() {
-//
-//        //Initialize searchController
-//        searchController = UISearchController(searchResultsController: nil)
-//        searchController.searchResultsUpdater = self
-//
-//        searchController.dimsBackgroundDuringPresentation = false
-//       // searchController.searchbar.sizeToFit()
-//
-//        // Sets this view controller as presenting view controller for the search interface
-//        definesPresentationContext = true
-//    }
-//}
 
